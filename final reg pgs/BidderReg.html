@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="fregstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .error{
+          color:#FF0000;
+      }
+      </style> 
+    <body>
+    <div class="header">
+        <h1>Bidders Portal</h1>
+        <p>Scheme For Farmers</p>
+      </div>
+      
+      <div class="topnav">
+        <a href="Home1.html">Home</a>
+        <a href="Farmerreg.html">Register</a>
+        <a href="logint.html">Login</a>
+        <a href="About.html">About Us</a>
+        <a href="Contact.html">Contact Us</a>
+        <!-- <a href="#" style="float:right">Link</a> -->
+      </div>
+
+<form id="regForm" action=""  method="post" onsubmit="return valid()">
+  <h1>Farmer Registration:</h1>
+  One "tab" for each step in the form:
+  <!-- <div class="tab">-->Personal Details  
+    <p><input type="text" placeholder="Full Name" name='fname' id='fname' required/><div id='id1' class='error'></div></p>
+    <p><input type="text" placeholder="Contact No"  name='contact' id='contact' required/><div id='id2' class='error'></div></p>
+    <p><input type="email" placeholder="E-mail..."  name='emailid' id='emailid' required /><div id='id3' class='error'></div></p>
+  <!-- </div>
+
+  <div class="tab">Address Details  -->
+    <p><input type="text" placeholder="Address line 1" name="addr1" id='addr1' required/><div id='id4' class='error'></div></p>
+    <p><input type="text" placeholder="Address line 2" name="addr2" id="addr2" required/></p>
+    <p><input type="text" placeholder="City"   name="city" id="city" required/></p>
+    <p><input type="text" placeholder="State"  name="state" id="state" required/></p>
+    <p><input type="text" placeholder="Pin Code"  name="pincode" id="pincode" /></p>
+    <!-- </div>
+
+  <div class="tab">-->Bank Details   
+    <p><input type="text" placeholder="AccountNo" name="accno" id='accno'><div id='id5' class='error'></div></p>
+    <p><input type="text" placeholder="IFSC Code" name="ifsc" id='ifsc'><div id='id6' class='error'></div></p>
+  <!-- </div>
+
+   <div class="tab"> -->Document Upload
+    <p><input type="file" placeholder="Aadhaar" name="aadhaar" id="aadhaar"></p>
+    <p><input type="file" placeholder="PAN" name="pan" id="pan"></p>
+    <p><input type="file" placeholder="Trader License" name="traderlicense" id="traderlicense"></p>
+  <!-- </div>
+
+  <div class="tab">-->Set Password  -->
+    <p><input type="password" placeholder="Password" name="password" id="password" ><div id='id7' class='error'></div></p>
+    <p><input type="password" placeholder="Confirm Password"  name="confirmpass" id="confirmpass"><div id='id8' class='error'></div></p>
+  </div>
+
+  <div style="overflow:auto;">
+    <div style="float:right;">
+       <!-- <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button> -->
+      <button type="submit" id="nextBtn" onclick="nextPrev(1)" onsubmit="return valid()">SubNext</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form:
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+  </div> -->
+
+  <div class="footer">
+    <li><a target="_blank" href="https://india.gov.in/"><img alt="" src="https://enam.gov.in/web/assest/images/footer/img2.jpg"></a></li>
+    <li><a target="_blank" href="https://digitizeindia.gov.in/"><img alt="" src="https://enam.gov.in/web/assest/images/footer/img3.jpg"></a></li>
+    <li><a target="_blank" href="https://data.gov.in/"><img alt="" src="https://enam.gov.in/web/assest/images/footer/img4.jpg"></a></li>
+    <li><a target="_blank" href="https://meity.gov.in/"><img alt="" src="https://enam.gov.in/web/assest/images/footer/img5.jpg"></a></li>
+  </div>
+</form>
+
+<script type="text/javascript" src="C:\Users\lntinfotech\Desktop\Project\fregvald.js"></script>
+</body>
+</html>
